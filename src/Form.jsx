@@ -6,7 +6,7 @@ const Form = ({item, handleChange, handleSubmit}) => {
     <form className="input-field" onSubmit={(e) => handleSubmit(e)}>
     <input
       type="text"
-      placeholder="Enter an item..."
+      placeholder="Enter a task..."
       onChange={(e) => handleChange(e)}
       value={item}
     />

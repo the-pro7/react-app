@@ -14,7 +14,12 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+button,
+input {
+  font-family: "Montserrat", sans-serif;
 }
 
 .input-field {
@@ -53,6 +58,22 @@ body {
   opacity: 0.8;
 }
 
+/* 
+font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif; */
+
+main .appTitle {
+  font-family: "Handlee", cursive;
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+}
+
+.appTitle > .version {
+  background: linear-gradient(4deg, #20c997, #22b8cf);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 
 /* ul styles */
 ul {
@@ -64,18 +85,17 @@ ul > * {
   display: flex;
   align-items: center;
   gap: 1rem;
-
 }
 
 ul > li + li {
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 ul > li button {
   border: 0;
-  padding: .4em 2em;
+  padding: 0.4em 2em;
   cursor: pointer;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   background-color: #22b8cf;
   text-transform: capitalize;
   font-weight: bold;
