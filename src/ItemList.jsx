@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 // import React from 'react'
-
+// import { ReactPropTypes } from "react";
+import PropTypes from 'prop-types'
 import List from "./List";
 
 const ItemList = ({ list, handleCheck, handleDelete }) => {
@@ -23,5 +24,11 @@ const ItemList = ({ list, handleCheck, handleDelete }) => {
     </ul>
   );
 };
+
+ItemList.propTypes = {
+    list: PropTypes.array.isRequired,
+    handleCheck: PropTypes.func.isRequired,
+    handleDelete: PropTypes.func.isRequired
+  }
 
 export default ItemList;

@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 // import React from 'react'
+import PropTypes from 'prop-types'
 
 const List = ({item, handleCheck, handleDelete}) => {
   return (
@@ -17,6 +18,12 @@ const List = ({item, handleCheck, handleDelete}) => {
         </button>
       </li>
   )
+}
+
+List.propTypes = {
+    item: PropTypes.string.isRequired,
+    handleCheck: PropTypes.func.isRequired,
+    handleDelete: PropTypes.func.isRequired,
 }
 
 export default List

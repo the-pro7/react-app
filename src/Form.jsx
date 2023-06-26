@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-// import React from 'react'
+import PropTypes from 'prop-types'
 
 const Form = ({item, handleChange, handleSubmit}) => {
   return (
@@ -13,6 +13,12 @@ const Form = ({item, handleChange, handleSubmit}) => {
     <button className="add">Add Task</button>
   </form>
   )
+}
+
+Form.propTypes = {
+    item: PropTypes.string.isRequired,
+    handleChange: PropTypes.func.isRequired,
+    handleSubmit: PropTypes.func.isRequired,
 }
 
 export default Form
