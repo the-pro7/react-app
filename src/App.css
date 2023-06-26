@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  /* border: 3px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.input-field {
+  /* border: 3px solid red; */
+  width: 100%;
+  display: flex;
+  box-shadow: 3px 3px 10px rgb(255 255 255 / 0.2), 3px 3px 10px rgb(0 0 0 / 0.4);
+  padding: 0.5em;
+  border-radius: 0.5rem;
+}
+
+.input-field > input {
+  padding: 1em;
+  border: 0;
+  background-color: transparent;
+  font-size: 1.1rem;
+}
+
+.input-field > input:focus,
+.input-field > input:active {
+  outline-color: transparent;
+  border: 0;
+}
+
+.input-field > button {
+  background: linear-gradient(45deg, #20c997, #22b8cf);
+  border: 0;
+  padding-inline: 3em;
+  border-radius: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 300ms;
+}
+
+.input-field button:hover {
+  opacity: 0.8;
+}
+
+
+/* ul styles */
+ul {
+  margin-top: 1em;
+}
+
+ul > * {
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+ul > li + li {
+  margin-top: .5em;
+}
+
+ul > li button {
+  border: 0;
+  padding: .4em 2em;
+  cursor: pointer;
+  border-radius: .2rem;
+  background-color: #22b8cf;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+ul > li:has(#complete:checked) span {
+  text-decoration: line-through;
+}
