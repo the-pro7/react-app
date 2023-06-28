@@ -1,10 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import Grocery from "./Grocery";
 
 function App() {
   const [item, setItem] = useState("");
-  const [list, setList] = useState([]);
+  const [list, setList] = useState(() => {
+    const localItem = localStorage.getItem("todos")
+    if (localItem == null) return []
+    return JSON.parse(localItem)
+  });
+
+  // Set items to local storage
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(list))
+  }, [list])
 
   const handleChange = (e) => {
     setItem(e.target.value);

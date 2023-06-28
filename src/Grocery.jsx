@@ -17,7 +17,7 @@ const Grocery = ({
   return (
     <main>
       <h1 style={{ marginBottom: ".3em", textAlign: "center" }} className="appTitle">
-        Taskify <span className="version">1.1.0</span>
+        Taskify <span className="version">1.2.0</span>
       </h1>
       <Form
         item={item}
