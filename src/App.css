@@ -23,12 +23,15 @@ input {
 }
 
 .input-field {
-  /* border: 3px solid red; */
+  border: 3px solid transparent;
+  border-image: linear-gradient(45deg, #20c997, #22b8cf);
+  border-image-slice: 1;
   width: 100%;
   display: flex;
   box-shadow: 3px 3px 10px rgb(255 255 255 / 0.2), 3px 3px 10px rgb(0 0 0 / 0.4);
   padding: 0.5em;
-  border-radius: 0.5rem;
+  position: sticky;
+  top: 1rem;
 }
 
 .input-field > input {
@@ -48,7 +51,7 @@ input {
   background: linear-gradient(45deg, #20c997, #22b8cf);
   border: 0;
   padding-inline: 3em;
-  border-radius: inherit;
+  border-radius: .5rem;
   font-weight: bold;
   cursor: pointer;
   transition: opacity 300ms;
@@ -78,6 +81,12 @@ main .appTitle {
 /* ul styles */
 ul {
   margin-top: 1em;
+ /* border: 3px solid red; */
+ padding: 1em;
+ background-color: #2e2d2d;
+ border-radius: .5rem;
+ max-height: 300px;
+ overflow-y: scroll;
 }
 
 ul > * {
