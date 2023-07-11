@@ -24,8 +24,8 @@ input {
 
 .input-field {
   border: 3px solid transparent;
-  border-image: linear-gradient(45deg, #20c997, #22b8cf);
-  border-image-slice: 1;
+
+  border-radius: .5rem;
   width: 100%;
   display: flex;
   box-shadow: 3px 3px 10px rgb(255 255 255 / 0.2), 3px 3px 10px rgb(0 0 0 / 0.4);
@@ -35,6 +35,7 @@ input {
 }
 
 .input-field > input {
+  flex: 1;
   padding: 1em;
   border: 0;
   background-color: transparent;

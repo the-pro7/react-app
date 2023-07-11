@@ -13,9 +13,12 @@ const List = ({item, handleCheck, handleDelete}) => {
           onChange={() => handleCheck(item.id)}
         />
         <span>{item.title}</span>
+        {/* <input type="text" value={item.title} style={{fontSize: "1rem", border: "none", background: "transparent"}} readOnly/>  */}
+        {/* Comming soon ^ */}
         <button className="delete" onClick={() => handleDelete(item.id)}>
           del
         </button>
+        {/* <button className="edit">Edit</button> */}
       </li>
   )
 }
